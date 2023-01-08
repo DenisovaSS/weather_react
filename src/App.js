@@ -98,7 +98,9 @@ function App() {
             </div>
             <div className="col-sm-4">
               <div className="card over">
-                <p className="SignatureForecast">Forecast for next 4 days</p>
+                <p className="SignatureForecast">
+                  Forecast for next 4 days after
+                </p>
 
                 <div className="card-body" id="weather-forecast"></div>
               </div>
