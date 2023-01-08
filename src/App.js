@@ -95,6 +95,16 @@ function App() {
                   </div>
                 </div>
               </div>
+              <div className="open-source">
+                <a
+                  href="https://github.com/DenisovaSS/weather_react"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open-source code
+                </a>
+                by Svitlana Denysova
+              </div>
             </div>
             <div className="col-sm-4">
               <div className="card over">
