@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import FormatDate from "./FormatDate";
 import WeatherForecast from "./WeatherForecast";
@@ -49,7 +50,7 @@ export default function Weather(props) {
       <div className="container">
         <div className="row">
           <div className="col-sm-7">
-            <div className="card over">
+            <div className="card over" id="field">
               <div className="card-body">
                 <form
                   className="research"
@@ -57,7 +58,11 @@ export default function Weather(props) {
                   onSubmit={handleSubmit}
                 >
                   <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">
+                    <label
+                      for="exampleInputEmail1"
+                      className="form-label"
+                      id="form-label"
+                    >
                       Weather in city:
                     </label>
                     <div className="row">
@@ -83,7 +88,7 @@ export default function Weather(props) {
                 <form className="city_day">
                   <div className="row">
                     <div className="col-sm-6">
-                      <h2>{weatherData.city}</h2>
+                      <h2 id="city_name">{weatherData.city}</h2>
                     </div>
                     <div className="col-sm-6 visible_day">
                       <FormatDate date={weatherData} />
