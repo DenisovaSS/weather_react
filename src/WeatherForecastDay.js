@@ -32,18 +32,22 @@ export default function WeatherForecastDay(props) {
 
   return (
     <div className="WeatherForecastDay">
-      <div className="row text-center">
-        <div className="col-3">
-          {day()} <br />
-          {date()}
-        </div>
-        <div className="col-6">
-          <span className="emoji">
-            {minTemperature()}°/{maxTemperature()}°
-          </span>
-        </div>
-        <div className="col-3">
-          <WeatherIcon code={props.info.weather[0].icon} size={35} />
+      <div className="card-body" id="weather-forecast">
+        <div className="container forecastBody">
+          <div className="row text-center">
+            <div className="col-3">
+              {day()} <br />
+              {date()}
+            </div>
+            <div className="col-6">
+              <span className="emoji">
+                {minTemperature()}°/{maxTemperature()}°
+              </span>
+            </div>
+            <div className="col-3">
+              <WeatherIcon code={props.info.weather[0].icon} size={35} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
