@@ -4,13 +4,11 @@ export default function WeatherInfo(props) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm-6">
-          <div className="temperature_com">
-            <span className="city_temp">
-              {Math.round(props.data.temperature)}
-            </span>
-            <span className="units">°C</span>
-          </div>
+        <div className="col-sm-6" id="temperature_com">
+          <span className="city_temp">
+            {Math.round(props.data.temperature)}
+          </span>
+          <span className="units">°C</span>
         </div>
         <div className="col-md-6">
           <div className="iconDaily">

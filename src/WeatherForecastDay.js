@@ -30,13 +30,13 @@ export default function WeatherForecastDay(props) {
     }
     return `${numberDate}/${months} `;
   }
-
+  // d-md-none d-lg-block
   return (
     <div className="WeatherForecastDay">
       <div className="card-body" id="weather-forecast">
         <div className="container forecastBody">
           <div className="row text-center">
-            <div className="col-3">
+            <div className="col-3" id="dateForecast">
               {day()} <br />
               {date()}
             </div>
@@ -46,7 +46,9 @@ export default function WeatherForecastDay(props) {
               </span>
             </div>
             <div className="col-3">
-              <WeatherIcon code={props.info.weather[0].icon} size={40} />
+              <div className="iconForecast">
+                <WeatherIcon code={props.info.weather[0].icon} size={40} />
+              </div>
             </div>
           </div>
         </div>

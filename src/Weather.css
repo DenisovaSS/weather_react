@@ -80,12 +80,7 @@ body {
   font-size: 20px;
 }
 
-.temperature_com .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  text-decoration: none;
-}
-.temperature_com {
+#temperature_com {
   text-align: center;
 }
 
@@ -108,4 +103,30 @@ ul {
 }
 canvas {
   margin-top: 5px;
+}
+
+@media (min-width: 576px) and (max-width: 770px) {
+  #city_name {
+    font-size: 40px;
+    color: red;
+  }
+  #dateForecast {
+    display: none;
+  }
+  .emoji {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .iconForecast {
+    font-size: 10px;
+  }
+  .city_temp {
+    font-size: 100px;
+  }
+  .units {
+    top: -65px;
+  }
+  .SignatureForecast {
+    font-size: 15px;
+  }
 }
