@@ -35,12 +35,15 @@ export default function WeatherForecastDay(props) {
     <div className="WeatherForecastDay">
       <div className="card-body" id="weather-forecast">
         <div className="container forecastBody">
+          <div className="dateForecast_show">
+            {day()}: {date()}
+          </div>
           <div className="row text-center">
             <div className="col-3" id="dateForecast">
               {day()} <br />
               {date()}
             </div>
-            <div className="col-6">
+            <div className="col-6" id="emoji_midle">
               <span className="emoji">
                 {minTemperature()}°/{maxTemperature()}°
               </span>
