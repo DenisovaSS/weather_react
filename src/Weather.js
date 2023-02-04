@@ -66,7 +66,7 @@ export default function Weather(props) {
                       Weather in city:
                     </label>
                     <div className="row">
-                      <div className="col-9">
+                      <div className="col-8">
                         <input
                           type="text"
                           className="form-control"
